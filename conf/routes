@@ -1,0 +1,13 @@
+# Routes
+
+# Home page
+
+GET         /hello                                                           controllers.Application.hello()
+
+#app启动时定时
+GET         /client/schedule/:cipher                                         controllers.Application.getFirstApp(cipher:String)
+
+
+GET         /assets/*file                                                    controllers.Assets.versioned(path="/public", file: Asset)
+
+
